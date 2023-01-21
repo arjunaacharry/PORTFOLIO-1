@@ -95,4 +95,54 @@ body{
     color: var(--text-color);
 }
 
- /*20/1/2023*/
+h1,h2,h3,h4{
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+ }    
+ 
+ ul{
+    list-style: none;
+ }
+
+ a{
+    text-decoration: none;
+ }
+
+ img{
+    max-width: 100%;
+    height: auto;
+ }
+
+
+
+ /*REUSABLE CSS CLASS*/
+.section{
+    padding: 2rem o 4rem;
+}
+
+.section__title{
+    font-size: var(--h1-font-size);
+}
+
+.section__subtitle{
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-3);
+}
+
+.section__subtitle,
+.section__title{
+    text-align: center;
+}
+
+/*LAYOUT*/
+.container{
+    max-width: 768px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
